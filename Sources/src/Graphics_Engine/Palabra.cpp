@@ -22,7 +22,6 @@ void Palabra::pinta(){
     {
         Letra letra = Letra(palabra[i], colorPalabra, colorFondo, tam, pos_x + (8 * tam * i), pos_y);
         letra.printLetra();
-        std::cout<<palabra[i];
     }
     
 }

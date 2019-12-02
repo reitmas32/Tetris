@@ -246,6 +246,84 @@ void Letra::setLetra(){
             }
         }
     break;
+    case Letras::N1:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N1[i][j];
+            }
+        }
+    break;
+    case Letras::N2:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N2[i][j];
+            }
+        }
+    break;
+    case Letras::N3:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N3[i][j];
+            }
+        }
+    break;
+    case Letras::N4:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N4[i][j];
+            }
+        }
+    break;
+    case Letras::N5:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N5[i][j];
+            }
+        }
+    break;
+    case Letras::N6:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N6[i][j];
+            }
+        }
+    break;
+    case Letras::N7:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N7[i][j];
+            }
+        }
+    break;
+    case Letras::N8:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N8[i][j];
+            }
+        }
+    break;
+    case Letras::N9:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N9[i][j];
+            }
+        }
+    break;
+    case Letras::N0:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N0[i][j];
+            }
+        }
+    break;
+
+    case Letras::ESPACIO:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _ESPACIO[i][j];
+            }
+        }
+    break;
 
     
     default:
@@ -439,7 +517,83 @@ void Letra::setLetra_s(){
             }
         }
     break;
-
+    case '1':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N1[i][j];
+            }
+        }
+    break;
+    case '2':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N2[i][j];
+            }
+        }
+    break;
+    case '3':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N3[i][j];
+            }
+        }
+    break;
+    case '4':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N4[i][j];
+            }
+        }
+    break;
+    case '5':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N5[i][j];
+            }
+        }
+    break;
+    case '6':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N6[i][j];
+            }
+        }
+    break;
+    case '7':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N7[i][j];
+            }
+        }
+    break;
+    case '8':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N8[i][j];
+            }
+        }
+    break;
+    case '9':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N9[i][j];
+            }
+        }
+    break;
+    case '0':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _N0[i][j];
+            }
+        }
+    break;
+    case ' ':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _ESPACIO[i][j];
+            }
+        }
+    break;
     
     default:
         break;

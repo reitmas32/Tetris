@@ -4,7 +4,8 @@
 #include "../../Headers/include/Graphics_Engine/miniwin.h"
 
 int main() {
-   Palabra p = Palabra("HOLA", 15,15,5,Color::Colors::Red, Color::Colors::Black);
-    p.pinta();
+   miniwin::vredimensiona(700,300);
+   Palabra p = Palabra("HOLA", 15,15,1,Color::Colors::Blue, Color::Colors::Black);
+   p.pinta();
    return 0;
 }

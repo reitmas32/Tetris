@@ -24,8 +24,8 @@ void Cuadro::pinta(){
 void Cuadro::pintaPosReal(){
     
     Color(this->color);
-    miniwin::rectangulo_lleno( + 1 + this->getPosicion().get_x(),
-                               + 1 + this->getPosicion().get_y(),
+    miniwin::rectangulo_lleno( + 0 + this->getPosicion().get_x(),
+                               + 0 + this->getPosicion().get_y(),
                                + this->getPosicion().get_x() + tam,
                                + this->getPosicion().get_y() + tam);
     miniwin::refresca();
