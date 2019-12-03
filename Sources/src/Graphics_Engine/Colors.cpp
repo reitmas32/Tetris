@@ -32,11 +32,17 @@ void Color::setColor(){
     case Color::Colors::Cyan:
         miniwin::color_rgb(_Cyan[0],_Cyan[1],_Cyan[2]);
     break;
+    case Color::Colors::CyanDark:
+        miniwin::color_rgb(_CyanDark[0],_CyanDark[1],_CyanDark[2]);
+    break;
     case Color::Colors::White:
         miniwin::color_rgb(_White[0],_White[1],_White[2]);
     break;
     case Color::Colors::Gray:
         miniwin::color_rgb(_Gray[0],_Gray[1],_Gray[2]);
+    break;
+    case Color::Colors::GrayDark:
+        miniwin::color_rgb(_GrayDark[0],_GrayDark[1],_GrayDark[2]);
     break;
     default:
         break;
