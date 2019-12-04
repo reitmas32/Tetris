@@ -44,6 +44,9 @@ void Color::setColor(){
     case Color::Colors::GrayDark:
         miniwin::color_rgb(_GrayDark[0],_GrayDark[1],_GrayDark[2]);
     break;
+    case Color::Colors::GrayLigth:
+        miniwin::color_rgb(_GrayLigth[0],_GrayLigth[1],_GrayLigth[2]);
+    break;
     default:
         break;
     }

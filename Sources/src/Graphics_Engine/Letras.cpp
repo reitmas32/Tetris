@@ -35,6 +35,8 @@ Letra::Letra(char letra, Color::Colors colorLetra, Color::Colors colorFondo, int
 
 void Letra::printLetra(){
     creaLetra();
+    Color(this->colorFondo);
+    miniwin::rectangulo_lleno(pos_x - tam, pos_y - tam, pos_x + (tam*8), pos_y + (tam*8));
     for(size_t i = 0; i < 7; i++){
         for(size_t j = 0; j < 7; j++){
             this->forma[i][j].pintaPosReal();
@@ -325,6 +327,14 @@ void Letra::setLetra(){
         }
     break;
 
+    case Letras::GUION:
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _GUION[i][j];
+            }
+        }
+    break;
+
     
     default:
         break;
@@ -591,6 +601,13 @@ void Letra::setLetra_s(){
         for(size_t i = 0; i < 7; i++){
             for (size_t j = 0; j < 7; j++){
                 this->mat[i][j] = _ESPACIO[i][j];
+            }
+        }
+    break;
+    case '-':
+        for(size_t i = 0; i < 7; i++){
+            for (size_t j = 0; j < 7; j++){
+                this->mat[i][j] = _GUION[i][j];
             }
         }
     break;

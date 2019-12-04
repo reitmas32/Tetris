@@ -19,6 +19,7 @@ static const std::vector<int> _Black                  = {  0,   0,   0};
 static const std::vector<int> _Brown                  = {101,  67,  33};  
 static const std::vector<int> _Gray                   = {153, 153, 153}; 
 static const std::vector<int> _GrayDark               = { 80,  80,  80}; 
+static const std::vector<int> _GrayLigth              = {190, 190, 190}; 
 
 /**
  * Namespace que almacena los colores del Motor Grafico
@@ -37,7 +38,8 @@ class Color{
             Black,
             Brown,
             Gray,
-            GrayDark
+            GrayDark,
+            GrayLigth
         };        
     private:
         Colors color;

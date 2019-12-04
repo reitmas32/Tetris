@@ -3,6 +3,7 @@
 void pintaCuadro(int x, int y, int tam, Color::Colors color,Color::Colors colorFondo,int b_sup, int b_inf, int b_rigth, int b_left){
     CuadroBordes c = CuadroBordes(x,y,tam,color,colorFondo,b_sup,b_inf,b_rigth,b_left);
     c.pintaPosReal();
+    c.~CuadroBordes();
     Color(Color::Colors::Black);
     miniwin::linea(x,y,x+tam,y);
     miniwin::linea(x,y,x,y+tam);
@@ -17,6 +18,7 @@ void pintaS(int x, int y, int tam, Color::Colors color,Color::Colors colorFondo,
 
     for( CuadroBordes c : listaCuadros){
         c.pintaPosReal();
+        c.~CuadroBordes();
     }
     //Color(color);
     miniwin::rectangulo(x + tam*1,y + tam*1,x + tam*1 + 1, y + tam*1 + 1);
@@ -36,6 +38,7 @@ void pintaI(int x, int y, int tam, Color::Colors color,Color::Colors colorFondo,
 
     for( CuadroBordes c : listaCuadros){
         c.pintaPosReal();
+        c.~CuadroBordes();
     }
     Color(Color::Colors::Black);
     miniwin::linea(x,y,x+tam,y);
@@ -51,6 +54,7 @@ void pintaZ(int x, int y, int tam, Color::Colors color,Color::Colors colorFondo,
 
     for( CuadroBordes c : listaCuadros){
         c.pintaPosReal();
+        c.~CuadroBordes();
     }
     Color(Color::Colors::Black);
     miniwin::linea(x + tam*0,y + tam*0,x + tam*2,y + tam*0);
@@ -68,6 +72,7 @@ void pintaT(int x, int y, int tam, Color::Colors color,Color::Colors colorFondo,
 
     for( CuadroBordes c : listaCuadros){
         c.pintaPosReal();
+        c.~CuadroBordes();
     }
     Color(Color::Colors::Black);
     miniwin::linea(x + tam*0,y + tam*0,x + tam*3,y + tam*0);
@@ -85,6 +90,7 @@ void pintaL(int x, int y, int tam, Color::Colors color,Color::Colors colorFondo,
 
     for( CuadroBordes c : listaCuadros){
         c.pintaPosReal();
+        c.~CuadroBordes();
     }
     Color(Color::Colors::Black);
     miniwin::linea(x,y,x+tam,y);
@@ -101,6 +107,7 @@ void pintaJ(int x, int y, int tam, Color::Colors color,Color::Colors colorFondo,
 
     for( CuadroBordes c : listaCuadros){
         c.pintaPosReal();
+        c.~CuadroBordes();
     }
     //Color(color);
     miniwin::rectangulo(x + tam*1,y + tam*2,x + tam*1 + 1, y + tam*2 + 1);

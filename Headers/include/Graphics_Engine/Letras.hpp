@@ -375,10 +375,20 @@ const uint8_t _ESPACIO[7][7] = {
     {0,0,0,0,0,0,0},
     {0,0,0,0,0,0,0}
 };
+
+const uint8_t _GUION[7][7] = {
+    {0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0},
+    {0,1,1,1,1,1,0},
+    {0,1,1,1,1,1,0},
+    {0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0}
+};
 class Letra{
     public:
         enum class Letras{
-            A,B,C,D,E,F,G,H,I,J,K,L,M,N,NN,O,P,Q,R,S,T,U,V,W,X,Y,Z,N1,N2,N3,N4,N5,N6,N7,N8,N9,N0,ESPACIO
+            A,B,C,D,E,F,G,H,I,J,K,L,M,N,NN,O,P,Q,R,S,T,U,V,W,X,Y,Z,N1,N2,N3,N4,N5,N6,N7,N8,N9,N0,ESPACIO,GUION
         };     
     private:
         uint8_t mat[7][7];
