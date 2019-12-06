@@ -11,7 +11,7 @@ private:
 public:
     CuadroTetris(/* args */);
     CuadroTetris(int x, int y,int tam, Color::Colors color, Color::Colors colorDecora);
-    void pintaPosReal();
+    void pintaPosReal(bool reflejo);
     ~CuadroTetris();
 };
 

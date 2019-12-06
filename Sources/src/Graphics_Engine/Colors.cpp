@@ -24,7 +24,7 @@ void Color::setColor(){
         miniwin::color_rgb(_Green[0],_Green[1],_Green[2]);
     break;
     case Color::Colors::Yellow:
-        miniwin::color_rgb(_Black[0],_Yellow[1],_Yellow[2]);
+        miniwin::color_rgb(_Yellow[0],_Yellow[1],_Yellow[2]);
     break;
     case Color::Colors::Magenta:
         miniwin::color_rgb(_Magenta[0],_Magenta[1],_Magenta[2]);
@@ -46,6 +46,9 @@ void Color::setColor(){
     break;
     case Color::Colors::GrayLigth:
         miniwin::color_rgb(_GrayLigth[0],_GrayLigth[1],_GrayLigth[2]);
+    break;
+    case Color::Colors::Purple:
+        miniwin::color_rgb(_Purple[0],_Purple[1],_Purple[2]);
     break;
     default:
         break;

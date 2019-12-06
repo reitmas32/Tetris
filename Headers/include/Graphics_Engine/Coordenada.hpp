@@ -14,6 +14,7 @@ public:
     int get_y();
     void set_x(int x);
     void set_y(int y);
+    void rota();
 };
 
 #endif  //COORDENADAS_HPP

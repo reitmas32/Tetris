@@ -26,3 +26,9 @@ void Coordenada::set_x(int x){
 void Coordenada::set_y(int y){
     this->y = y;
 }
+
+void Coordenada::rota(){
+    int tmp = this->x;
+    this->set_x(-this->y);
+    this->set_y(tmp);
+}
