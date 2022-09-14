@@ -1,0 +1,25 @@
+name_project: Tetris
+type_project: executable
+description: Tetris create with Next and miniwin
+version: v0.0.1
+build_dir: build
+include_dirs:
+- include
+dependencies:
+name_build: app
+builds:
+  tetris:
+    base: basic
+    source_cxx:
+      - src/*.cpp
+
+      - src/main.cpp
+    source_c:
+      - src/*.c
+
+    linker_regex:
+      $LD $FILES -lstdc++ -o $FILE_OUT -lX11
+commands:
+  src: cd src
+#  test: g++ test/test.cpp -o build/test
+#  run-test: ./build/test
